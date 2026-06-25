@@ -65,6 +65,7 @@ jobs:
          from: ${{ secrets.EMAIL_USERNAME }}
          body: |
                Hi,
-               Phoenix Inwarranty flow tests has been executed. The Report has been published and the URL
-               is: https://rslohakare.github.io/Postman-Collection/
+               The Phoenix Inwarranty flow tests have been executed. The report has been
+               published at: https://rslohakare.github.io/Postman-Collection/
+      
           
