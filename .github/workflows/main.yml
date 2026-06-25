@@ -56,7 +56,7 @@ jobs:
         if: always()
         uses: dawidd6/action-send-mail@v17
         with:
-         server_address: ://gmail.com
+         server_address: smtp.gmail.com
          server_port: 465
          username: ${{ secrets.EMAIL_USERNAME }}
          password: ${{ secrets.EMAIL_PASSWORD }}
@@ -66,5 +66,5 @@ jobs:
          body: |
                Hi,
                Phoenix Inwarranty flow tests has been executed. The Report has been published and the URL
-               is: https://github.io
+               is: https://rslohakare.github.io/Postman-Collection/
           
