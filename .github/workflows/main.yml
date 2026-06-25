@@ -51,4 +51,20 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: newman/
+
+      - name: Send Email Notification
+        if: always()
+        uses: dawidd6/action-send-mail@v17
+        with:
+         server_address: ://gmail.com
+         server_port: 465
+         username: ${{ secrets.EMAIL_USERNAME }}
+         password: ${{ secrets.EMAIL_PASSWORD }}
+         subject: Phoenix Inwarranty Flow Test Execution Notification
+         to: rslohakare009@gmail.com
+         from: ${{ secrets.EMAIL_USERNAME }}
+         body: |
+               Hi,
+               Phoenix Inwarranty flow tests has been executed. The Report has been published and the URL
+               is: https://github.io
           
