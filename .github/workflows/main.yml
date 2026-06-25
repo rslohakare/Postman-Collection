@@ -62,7 +62,7 @@ jobs:
          password: ${{ secrets.EMAIL_PWD }}
          subject: Phoenix Inwarranty Flow Test Execution Notification
          to: lohakare754@gmail.com
-         from: ${{ secrets.EMAIL_PWD }}
+         envelope_from: ${{ secrets.EMAIL_PWD }}
          body: |
                Hi,
                The Phoenix Inwarranty flow tests have been executed. The report has been
